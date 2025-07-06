@@ -185,7 +185,7 @@ return `
 `;
 }
 function 给我通用配置文件(hostName) {
-我的优选.push(`${hostName}:443#备用节点`)
+我的优选.push(`${hostName}:443#🇨🇳备用节点`)
 if (私钥开关) {
   return `请先关闭私钥功能`
 }else {
@@ -201,7 +201,7 @@ if (私钥开关) {
 }
 }
 function 给我小猫咪配置文件(hostName) {
-我的优选.push(`${hostName}:443#备用节点`)
+我的优选.push(`${hostName}:443#🇨🇳备用节点`)
 const 生成节点 = (我的优选) => {
   return 我的优选.map(获取优选 => {
     const [主内容,tls] = 获取优选.split("@");
@@ -211,7 +211,7 @@ const 生成节点 = (我的优选) => {
     const 地址 = 拆分地址端口.join(":").replace(/^\[(.+)\]$/, '$1');
     const TLS开关 = tls === 'notls' ? 'false' : 'true';
   return {
-    nodeConfig: `- name: ${节点名字}-${地址}-${端口}
+    nodeConfig: `- name: ${节点名字}}
   type: ${转码}${转码2}
   server: ${地址}
   port: ${端口}
@@ -225,7 +225,7 @@ const 生成节点 = (我的优选) => {
     headers:
       Host: ${hostName}
       ${我的私钥}`,
-    proxyConfig: `    - ${节点名字}-${地址}-${端口}`
+    proxyConfig: `    - ${节点名字}}`
     };
   });
 };
